@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite ;
+            font-family: sans-serif;
+        }
+        .headerDiv{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            gap: 1rem;
+            
+        }
+        .headerDiv img{
+            height:5rem
+        }
+        .headerDiv div:first-child{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .addItem{
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;
+            padding-left: 10%;
+            cursor: pointer;
+        }
+        .addItem:hover{
+            color: rgb(202, 13, 13);
+            
+        }
+        .showinputFeild{
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;
+            padding-left: 10%;
+            cursor: pointer;
+        }
+        .showAddedTask{
+            align-items: center;
+            justify-content:flex-start;
+            padding-left: 10%;
+            cursor: pointer;
+
+        }
+        input {
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(202, 13, 13);
+            border-radius: 10px;
+            padding: 10px 25px;
+            background: transparent;
+            max-width: 190px;
+        }
+
+        .input:active {
+            box-shadow: 2px 2px 15px rgb(202, 13, 13)inset;
+        }
+        button {
+              padding: 13px 30px;
+            border: none;
+            outline: none;
+            background-color: #151515;
+            color: #eee;
+            border-radius: 7px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease-out;
+        }
+        button:hover {
+            transform: translateY(-3px);
+        }
+       
+            button-span {
+            color: #aaa;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="headerDiv">
+        <div>Shiyon's ToDo</div>
+        <div><img src="logo.svg" alt=""></div>
+    </div>
+    <div class="addItem"><strong>+ Add Item</strong></div>
+    <div class="showAddedTask"></div>
+    <div class="showinputFeild"></div>
+
+
+
+
+
+
+    <script src="first.js"></script>
+</body>
+</html>
